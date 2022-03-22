@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Activities.Order_info">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/close_order_info"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_close"
+            app:tint="@color/grey_60" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="الطلبات"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/grey_80"
+            app:fontFamily="sans-serif-medium" />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:orientation="vertical"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_info_res"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                tools:listitem="@layout/order_item_product"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="اسم الزبون:"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    />
+                <TextView
+                    android:id="@+id/order_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="مصطفى نعمه"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_edittext"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="رقم الهاتف :"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    />
+                <TextView
+                    android:id="@+id/order_user_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="07825313141"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_edittext"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="العنوان :"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    />
+                <TextView
+                    android:id="@+id/order_user_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="كوت /داموك/الجمعية"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_edittext"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="رقم هاتف اضافي :"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    />
+                <TextView
+                    android:id="@+id/order_user_number_extra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="07803020038"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_edittext"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="عنوان اضافي :"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    />
+                <TextView
+                    android:id="@+id/order_user_address_extra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="كوت /الهورة/شارع التربية"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_edittext"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ملاحظات :"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    />
+                <TextView
+                    android:id="@+id/order_details_o"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="يرجى توصيل الطلبية مساءا"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_edittext"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="المجموع :"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    />
+                <TextView
+                    android:id="@+id/order_total_o"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="55000 د.ع"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_edittext"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    />
+                <Button
+                    android:id="@+id/order_conform"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="تاكيد الطلب"
+                    android:background="@drawable/btn_rounded_accent"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

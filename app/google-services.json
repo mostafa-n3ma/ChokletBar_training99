@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "563563719216",
+    "project_id": "banjoldemo",
+    "storage_bucket": "banjoldemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563563719216:android:31d3ca2b4ed2ed3c125bf5",
+        "android_client_info": {
+          "package_name": "com.example.chokletbar_training99"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563563719216-ofbuadvapgsjbk18pt0vf8mma4fi49e0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxNPaE44u9BpsoPdvGyZleFvZEL1gAoT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563563719216-ofbuadvapgsjbk18pt0vf8mma4fi49e0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

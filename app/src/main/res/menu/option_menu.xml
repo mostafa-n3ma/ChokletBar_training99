@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add_product_option"
+        android:title="Add Product"
+        />
+    <item android:id="@+id/orders_control_option"
+        android:title="Orders Control"
+        />
+    <item android:id="@+id/users_control_option"
+        android:title="Users Control"
+        />
+    <item android:id="@+id/Sign_Up_option"
+        android:title="Sign_Up"
+        />
+    <item android:id="@+id/Sign_In_option"
+        android:title="Sign_In"
+        />
+
+    <item android:id="@+id/Log_Out_option"
+        android:title="Log Out"
+        />
+    <item android:id="@+id/order_info"
+        android:title="order info"
+        />
+
+
+</menu>
